@@ -5,7 +5,7 @@ namespace App\Http\Controllers\client;
 use App\BPost;
 use Illuminate\Http\Request;
 
-class BPostController extends Controller
+class  FPostController extends Controller
 {
     /**
      * Display a listing of the resource.
