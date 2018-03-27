@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\client;
 
+use App\Http\Controllers\Controller;
 use App\BPost;
 use Illuminate\Http\Request;
 
@@ -12,9 +13,7 @@ class  FPostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-     public function home(){
-       return view('vueApp');
-     }
+
 
     public function index()
     {

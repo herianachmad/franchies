@@ -17,8 +17,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
+Route::get('/administrator','AdministrationController@index')->name ('administration.dashboard');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//frntend
+Route::resource('/users','UserController');
+
+Route::get('/post/{slug}','frontend\FPostController@show');

@@ -16,3 +16,13 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//Posts
+//backend
+
+
+
+//frontend
+Route::get('posts','frontend\FPostController@index');
+
+Route::get('post/{slug}','frontend\FPostController@show');
