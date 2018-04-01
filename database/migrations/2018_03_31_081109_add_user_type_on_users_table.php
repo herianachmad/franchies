@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddStatusOnUsersTable extends Migration
+class AddUserTypeOnUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,8 @@ class AddStatusOnUsersTable extends Migration
     public function up()
     {
       Schema::table('users', function (Blueprint $table) {
-       $table->enum('status',['a','l','i'])->default('i');
-       });
+      $table->enum('user_type',['general','superuser','administrator'])->default('general');
+      });
     }
 
     /**
@@ -25,8 +25,6 @@ class AddStatusOnUsersTable extends Migration
      */
     public function down()
     {
-      Schema::table('users', function (Blueprint $table) {
-          //
-      });
+        //
     }
 }

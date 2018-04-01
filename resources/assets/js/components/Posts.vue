@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h2>hello vue js test mix</h2>
+    <h2>Posts extraction</h2>
   </div>
 </template>

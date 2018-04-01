@@ -8,6 +8,7 @@ use App\User;
 class UserController extends Controller
 {
    public function index(){
-     return User::orderBy('created_at')->get();
+     $users = User::paginate(10);
+     return response()->json(["users"=>$users]);
    }
 }

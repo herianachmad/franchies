@@ -8,7 +8,7 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-
+var Vue = require('vue');
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -18,9 +18,22 @@ window.Vue = require('vue');
 Vue.component('posts',
 require('./components/Posts.vue'));
 
+Vue.component('users',
+ require('./components/Administrator/Users.vue'));
+
+// import users from './components/Administrator/Users.vue';
+
 const app = new Vue({
     el: '#app',
-    created(){
-      console.log('Hello Vue Js')
-    }
 });
+
+//add custom js admin-lte
+// $('.sidebar-toggle').on('click',function(){
+//
+//   var cls = $('body').hasClass('sidebar-collapse');
+//   if(cls == true){
+//     $('body').removeClass('sidebar-collapse');
+//   } else{
+//     $('body').addClass('sidebar-collapse');
+//   }
+// });

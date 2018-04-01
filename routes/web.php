@@ -17,11 +17,16 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/administrator','AdministrationController@index')->name ('administration.dashboard');
+
+//backend
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//frntend
-Route::resource('/users','UserController');
+/*administrator / frontend */
+Route::get('administrator', function () {
+    return view('administrator');
+});
 
-Route::get('/post/{slug}','frontend\FPostController@show');
+Route::get('administrator/users', function () {
+    return view('layouts.administrator.user.index');
+});
