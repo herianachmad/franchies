@@ -17,16 +17,15 @@ Route::get('/', function () {
 
 Auth::routes();
 
-
-//backend
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 /*administrator / frontend */
 Route::get('administrator', function () {
     return view('administrator');
 });
-
 Route::get('administrator/users', function () {
     return view('layouts.administrator.user.index');
 });
+
+
+//backend
+
+Route::get('/home', 'HomeController@index')->name('home');
