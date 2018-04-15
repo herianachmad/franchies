@@ -18,11 +18,15 @@ Route::get('/', function () {
 Auth::routes();
 
 /*administrator / frontend */
+
 Route::get('administrator', function () {
     return view('administrator');
 });
 Route::get('administrator/users', function () {
     return view('layouts.administrator.user.index');
+});
+Route::get('administrator/categories', function () {
+    return view('layouts.administrator.category.index');
 });
 
 
