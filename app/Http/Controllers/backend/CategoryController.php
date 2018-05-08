@@ -4,6 +4,7 @@ namespace App\Http\Controllers\backend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\CategoryPost;
 
 class CategoryController extends Controller
 {
@@ -12,9 +13,10 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
-        return 'worked';
+        return 'API READY TO EXTRACTED';
     }
 
     /**

@@ -20,6 +20,7 @@
     },
     "dependencies": {
         "admin-lte": "^2.4.3",
+        "startbootstrap-full": "^4.0.0",
         "vue-router": "^3.0.1"
     }
 }

@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-/*administrator / frontend */
+/*administrator / backend*/
 
 Route::get('administrator', function () {
     return view('administrator');
@@ -27,9 +27,9 @@ Route::get('administrator/users', function () {
 })->name('user-lists');
 Route::get('administrator/categories', function () {
     return view('layouts.administrator.category.index');
-});
+})->name('administrator-categories');
 
 
-//backend
+//frontend
 
 Route::get('/home', 'HomeController@index')->name('home');

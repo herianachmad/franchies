@@ -31,6 +31,7 @@
           </a>
         </li>
         <li><a href="{{route('user-lists')}}"><i class="fa fa-user"></i> <span>Users</span></a></li>
+        <li><a href="{{route('administrator-categories')}}"><i class="fa fa-list-alt"></i> <span>Category</span></a></li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>

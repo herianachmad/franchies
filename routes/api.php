@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 //backend
 Route::resource('administrator/users','UserController');
+
+Route::resource('administrator/categories','backend\CategoryController');

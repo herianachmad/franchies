@@ -21,6 +21,8 @@ require('./components/Posts.vue'));
 Vue.component('users',
  require('./components/Administrator/Users.vue'));
 
+Vue.component('categories',
+require('./components/Administrator/Categories.vue'));
 // import users from './components/Administrator/Users.vue';
 
 const app = new Vue({
