@@ -22,10 +22,10 @@ Auth::routes();
 Route::get('administrator', function () {
     return view('administrator');
 })->name('administrator-dashboard');
-Route::get('administrator/users', function () {
+Route::get('administrator/user', function () {
     return view('layouts.administrator.user.index');
 })->name('user-lists');
-Route::get('administrator/categories', function () {
+Route::get('administrator/category', function () {
     return view('layouts.administrator.category.index');
 })->name('administrator-categories');
 

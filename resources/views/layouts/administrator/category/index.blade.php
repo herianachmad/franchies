@@ -63,7 +63,35 @@
 
     <!-- Main content -->
     <section class="content container-fluid">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addCategoryModal">Add Category</button> <br><br>
+        <div class="modal fade" id="addCategoryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">New Category</h4>
+              </div>
+              <form action="{{route('categories.store')}}" method="post">
+                {{csrf_field()}}
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" value="">
+                  </div>
 
+                  <div class="form-group">
+                    <label for="desc">Description</label>
+                    <textarea name="description" id="desc" rows="5" cols="20" class="form-control"></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
@@ -72,7 +100,7 @@
             <div class="row">
                 <div class="col-md-10">
                     <div class="panel panel-default">
-                        <div class="panel-heading">Categories</div>
+                        {{-- <div class="panel-heading">Categories</div> --}}
                             <categories></categories>
                         </div>
                     </div>

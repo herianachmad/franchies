@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\backend;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\CategoryPost;
+use App\Http\Controllers\Controller;
 
 class CategoryController extends Controller
 {
@@ -13,11 +12,9 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-
     public function index()
     {
-      $categories = CategoryPost::paginate(10);
-      return response()->json(["categories"=>$categories]);
+        //
     }
 
     /**
@@ -38,8 +35,7 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        CategoryPost::create($request->all());
-        return back();
+        //
     }
 
     /**

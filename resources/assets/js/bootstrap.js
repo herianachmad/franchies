@@ -13,7 +13,11 @@ try {
     require('bootstrap-sass');
 } catch (e) {}
 
-require('admin-lte');
+    require('admin-lte');
+    require('popper.js');
+    // require('startbootstrap-full');
+
+
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
