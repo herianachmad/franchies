@@ -7,6 +7,7 @@
           <th>Name</th>
           <th>Description</th>
           <th>Created_At</th>
+          <th>Updated_At</th>
           <th colspan="2">Action</th>
         </tr>
       </thead>
@@ -16,6 +17,7 @@
           <td> {{ category.name }} </td>
           <td> {{ category.description }} </td>
           <td> {{ category.created_at }} </td>
+          <td> {{ category.updated_at }} </td>
           <td><button type="button" class="btn btn-info" name="button">Edit</button></td>
           <td><button type="button" class="btn btn-danger" name="button">Delete</button></td>
         </tr>

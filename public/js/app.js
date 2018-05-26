@@ -11923,7 +11923,7 @@ Vue.component('posts', __webpack_require__(41));
 
 Vue.component('users', __webpack_require__(43));
 
-Vue.component('categories', __webpack_require__(46));
+Vue.component('categories', __webpack_require__(68));
 // import users from './components/Administrator/Users.vue';
 
 var app = new Vue({
@@ -45812,15 +45812,42 @@ if (false) {
 }
 
 /***/ }),
-/* 46 */
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(4)
 /* script */
-var __vue_script__ = __webpack_require__(47)
+var __vue_script__ = __webpack_require__(69)
 /* template */
-var __vue_template__ = __webpack_require__(48)
+var __vue_template__ = __webpack_require__(70)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -45837,7 +45864,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/components/Administrator/Categories.vue"
+Component.options.__file = "resources/assets/js/components/Administrator/category/Categories.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -45846,9 +45873,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1d222af5", Component.options)
+    hotAPI.createRecord("data-v-718d0104", Component.options)
   } else {
-    hotAPI.reload("data-v-1d222af5", Component.options)
+    hotAPI.reload("data-v-718d0104", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -45859,13 +45886,15 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 47 */
+/* 69 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
+//
+//
 //
 //
 //
@@ -45918,7 +45947,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 48 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -45940,6 +45969,8 @@ var render = function() {
             _c("td", [_vm._v(" " + _vm._s(category.description) + " ")]),
             _vm._v(" "),
             _c("td", [_vm._v(" " + _vm._s(category.created_at) + " ")]),
+            _vm._v(" "),
+            _c("td", [_vm._v(" " + _vm._s(category.updated_at) + " ")]),
             _vm._v(" "),
             _vm._m(1, true),
             _vm._v(" "),
@@ -45964,6 +45995,8 @@ var staticRenderFns = [
         _c("th", [_vm._v("Description")]),
         _vm._v(" "),
         _c("th", [_vm._v("Created_At")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Updated_At")]),
         _vm._v(" "),
         _c("th", { attrs: { colspan: "2" } }, [_vm._v("Action")])
       ])
@@ -46005,15 +46038,9 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1d222af5", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-718d0104", module.exports)
   }
 }
-
-/***/ }),
-/* 49 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

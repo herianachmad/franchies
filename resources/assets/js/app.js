@@ -22,7 +22,7 @@ Vue.component('users',
  require('./components/Administrator/Users.vue'));
 
 Vue.component('categories',
-require('./components/Administrator/Categories.vue'));
+require('./components/Administrator/category/Categories.vue'));
 // import users from './components/Administrator/Users.vue';
 
 const app = new Vue({
