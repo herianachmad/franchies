@@ -33,3 +33,6 @@ Route::get('administrator/category', function () {
 //frontend
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profile', function () {
+    return view('layouts.frontend.profile.index');
+})->name('profile');

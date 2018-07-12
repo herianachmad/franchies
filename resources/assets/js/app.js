@@ -15,6 +15,7 @@ var Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+/*Administrator*/
 Vue.component('posts',
 require('./components/Posts.vue'));
 
@@ -24,6 +25,12 @@ Vue.component('users',
 Vue.component('categories',
 require('./components/Administrator/category/Categories.vue'));
 // import users from './components/Administrator/Users.vue';
+
+
+/*frontend*/
+Vue.component('profile',
+ require('./components/Frontend/profile/Profile.vue'));
+
 
 const app = new Vue({
     el: '#app',

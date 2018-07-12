@@ -214,6 +214,5 @@ http://www.tooplate.com/view/2076-zentro
 <script src="{{asset('2076_zentro/js/nivo-lightbox.min.js')}}"></script>
 <script src="{{asset('2076_zentro/js/wow.min.js')}}"></script>
 <script src="{{asset('2076_zentro/js/custom.js')}}"></script>
-
 </body>
 </html>
